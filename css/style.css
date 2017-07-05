@@ -54,6 +54,11 @@
 	padding: 20px;
 	text-indent: 2.0em;
 }
+.paragraphminor {
+	font-size: 18px;
+	font-family: "Times New Roman";
+	text-indent: 2.0em;
+}
 h1 {
 	text-align: center;
 }
