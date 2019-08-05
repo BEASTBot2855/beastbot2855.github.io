@@ -11,5 +11,5 @@ Meeting are usually on Thursdays after school in Mr. Fischer's room (1222), [che
 
 ## Register!
 
-Fill out this form to let us know you're interested: [<img src="/assets/images/forms.png" alt="Google Form" class="picture cursor hover-shadow">](https://goo.gl/forms/CNYYBeEVwggcZZvl2)<br/><br/>
+Fill out this form to let us know you're interested: [<img src="/assets/images/Forms.png" alt="Google Form" class="picture cursor hover-shadow">](https://goo.gl/forms/CNYYBeEVwggcZZvl2)<br/><br/>
 If you choose to recieve text or [Remind](https://remind.com) notification alerts, you will be notified on the day of meetings.
