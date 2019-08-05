@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ meta.description|striptags }}">
+	{% seo %}
+	<!-- Bootstrap Core CSS -->
+	<link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="/assets/css/theme.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" type="img/png" href="/assets/images/CougearCentered.png" />
+	<link rel="apple-touch-icon" type="img/png" href="/assets/images/CougearCentered.png" />
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/lightbox.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/beastbot.css" />
+
+	<script src="/assets/js/beastbot.js"></script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<img src="/assets/images/menu.png" alt="menu" onclick="hideNav()" style="height:40px;right:0;padding-right:5px;padding-top:10px;z-index:4; position: absolute;" class="cursor hideButton">
+	<nav id="navbar" class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<a href="/main">
+			<img src="/assets/images/Cougear.png" alt="Cougear" style="position: absolute; margin-left: 5px;height: 50px;" class="cursor">
+		</a>
+		<div id="navbarContent" class="container-fluid navbarContent">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			 <div class="navbar-header" style="padding-left: 40px">
+					{% assign sorted_pages = site.pages | sort:"navPos" %}
+					{% for node in sorted_pages %}
+						{% if node.navPos %}
+						<a class="navbar-brand" href="{{ node.url }}">{{ node.title }}</a>
+						{% endif %}
+					{% endfor %}
+			</div>
+
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Page Header -->
+	<!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: {% if page.img %} url({{ page.img }}) {% else %} url('images/Team.jpg'){% endif %};">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="post-heading">
+						<h1>{{ page.title | default: site.title }}</h1>
+						<h2 class="subheading">{{ page.description | default: site.description }}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Post Content -->
+	<article>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<hr>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+						<li>
+							<a href="https://youtube.com/FRC2855" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/@ComoBEASTbot" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/beastbot2855/" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/Beastbot2855" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.thebluealliance.com/team/2855" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i style="position: absolute;" class="fa fa-circle fa-stack-2x"></i>
+									<span style="margin-left: -16px; color: white; position: absolute; font-family: sans-serif; font-size: 17px;">TBA</span>
+
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:beastbot2855@gmail.com" target="_blank" rel="noopener noreferrer">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-envelope fa-stack-1x fa-inverse" style="margin-top: -2px"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
