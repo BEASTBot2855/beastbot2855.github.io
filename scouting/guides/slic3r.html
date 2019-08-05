@@ -1,0 +1,77 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>How to install Slic3r</title>
+		<link rel="stylesheet" type="text/css" href="/scouting/css/style.css" />
+		<link rel="icon" type="img/png" href="/assets/images/ZLogo.png" />
+		<link rel="apple-touch-icon" type="img/png" href="/assets/images/ZLogo.png" />
+	</head>
+
+	<body>
+		<div class="pageoutline">
+			{% include header.html %}
+			{% include navbar.html %}
+			<div class="pagecontent">
+				<h1>Guides</h1>
+					<h2>How to Install Slic3r, and load the BEASTBot config</h2>
+						<h3>Windows</h3>
+							<p>
+								Download <a href="https://www.prusa3d.com/drivers/" target="_blank">Sclic3r Prusa Edition</a><br/>
+								For the red 3D Printer download the <a href="/assets/files/Slic3r-red.ini">BEASTBot Slic3r configuration file</a> from this site<br/>
+								For the MOD-t 3D Printer download the <a href="/assets/files/Slic3r-MOD-t.ini">MOD-t Slic3r configuration file</a> from this site<br/>
+								<em>(You may have to <u>right click</u>, <u>Save target as</u>)<br/>
+								(Once it downloads, you may have to change a <u>.htm</u> extension, it should end in <u>.ini</u>)</em><br/>
+								In the Pursa3D installer, choose to install <u>Slic3r</u> and <u>Pronterface</u><br/>
+								Once the install is done, open <u>Slic3r</u><br/>
+								In Slic3r, click <u>File</u>, then click <u>Load Config Bundle...</u><br/>
+								In the Windows Explorer window, go to <u>Downloads</u>, then choose <u>Slic3r.ini</u>
+							</p>
+						<h3>Mac OS X</h3>
+							<p>
+								Download <a href="https://www.prusa3d.com/drivers/" target="_blank">Sclic3r Prusa Edition</a><br/>
+								For the red 3D Printer download the <a href="/assets/files/Slic3r-red.ini">BEASTBot Slic3r configuration file</a> from this site<br/>
+								For the MOD-t 3D Printer download the <a href="/assets/files/Slic3r-MOD-t.ini">MOD-t Slic3r configuration file</a> from this site<br/>
+								<em>(You may have to <u>right click</u>, <u>Download Linked File</u>)<br/>
+								(Once it downloads, you may have to remove a <u>.txt</u> extension in Get Info, it should end in <u>.ini</u>)</em><br/>
+								<u>Unzip</u> the <u>.zip</u> file you just downloaded<br/>
+								<u>Copy/Move</u> the <u>Slic3r</u> from the folder you unzipped to your <u>Applications</u> folder<br/>
+								Open <u>Slic3r</u><br/>
+		In the Configuration Assistant window, Click <u>Finish</u><br/>
+								In Slic3r, click <u>File</u>, then click <u>Load Config Bundle...</u><br/>
+								In the Finder window, go to <u>Downloads</u>, then choose <u>Slic3r.ini</u>
+							</p>
+						<h3>Linux</h3>
+							<p>
+								Download <a href="https://dl.slic3r.org/linux/" target="_blank">Slic3r</a><br/>
+								For the red 3D Printer download the <a href="/assets/files/Slic3r-red.ini">BEASTBot Slic3r configuration file</a> from this site<br/>
+                For the MOD-t 3D Printer download the <a href="/assets/files/Slic3r-MOD-t.ini">MOD-t Slic3r configuration file</a> from this site<br/>
+								<em>(You may have to <u>right click</u>, <u>Save Link As...</u>)<br/>
+								(Once it downloads, you may have to remove a <u>.txt</u> extension, it should end in <u>.ini</u>)</em><br/>
+								Run the command <u>sudo apt install freeglut3</u><br/>
+		Extract the <u>.tar.gz</u> that you downloaded<br/>
+								Open <u>Slic3r</u> by running the file <u>Slic3r/bin/slic3r</u><br/>
+		In the Configuration Assistant window, Click <u>Cancel</u><br/>
+		Press <u>ctrl + , (comma)</u>, then in the dropdown for Mode: choose <u>Expert</u>)<br/>
+								In Slic3r, click <u>File</u>, then click <u>Load Config Bundle...</u><br/>
+								In the file manager window, go to <u>Downloads</u>, then choose <u>Slic3r.ini</u><br/>
+							</p>
+
+						<h2>Defaults for the red 3D Printer are:</h2>
+							<h3>0.20mm NORMAL (Cougar Default)</h3>
+							<h3>Prusa PLA 1.75mm <em>(When printing with PLA)</em></h3>
+							<h3>Cougar1</h3>
+<br/>
+						<h2>Defaults for the MOD-t 3D Printer are:</h2>
+							<h3>200µm-HQ-2mm-no sup</h3>
+							<h3>Prusa PLA 1.75mm <em>(When printing with PLA)</em></h3>
+							<h3>MOD-t</h3>
+			</div>
+			{% include footer.html %}
+		</div>
+	</body>
+</html>

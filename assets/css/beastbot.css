@@ -1,0 +1,48 @@
+/*  general  */
+code {
+	color: #999;
+}
+/*  index  */
+.calendar {
+	width: 300px;
+}
+@media only screen and (min-width: 768px) {
+	.calendar {
+		float: right;
+	}
+}
+.picture{
+	width: 80px;
+}
+.YouTube {
+	width: 75%;
+}
+@media only screen and (min-width: 768px) {
+	.picture{
+		width: 200px;
+		padding: 5px;
+	}
+	.YouTube {
+		height: 340px;
+		width: 600px;
+	}
+}
+/*  guides  */
+.guideBack {
+	margin-top: -70px;
+	position: absolute;
+}
+.growPic {
+	transition: .5s;
+	width: 50%;
+}
+.growPic:hover {
+	width: 100%;
+}
+.growPicSmall {
+	transition: .5s;
+	width: 25%;
+}
+.growPicSmall:hover {
+	width: 50%;
+}
