@@ -26,4 +26,4 @@ If you are interested in joining the robotics team, you should check out our [Re
 ---
 
 ## BEASTBot's latest YouTube Video!
-<iframe class="YouTube" src="http://www.youtube.com/embed?max-results=1&listType=user_uploads&list=FRC2855" allowfullscreen style="border: none;"></iframe>
+<iframe class="YouTube" src="https://www.youtube.com/embed?max-results=1&listType=user_uploads&list=FRC2855" allowfullscreen style="border: none;"></iframe>
